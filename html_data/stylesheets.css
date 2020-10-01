@@ -1,0 +1,426 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+	font-family: Bahnschrift, Arial;
+	font-weight: 100;
+	font-size:20px;
+	background-color: #000;
+	table-layout:fixed;
+}
+
+@font-face {
+	font-family: shagexotica;
+	src: url(fonts/shagexotica.otf);
+}
+
+@font-face {
+	font-family: shaglounge;
+	src: url(fonts/shaglounge.otf);
+}
+
+/* table shit */
+table {
+  table-layout: fixed;
+  width: 95%;
+}
+
+th, td {
+  width: 25%;
+  overflow: hidden;
+  padding: 0 1% 0 1%;
+  vertical-align: top;
+}
+
+th {
+	font-family: shaglounge, Arial, Sans-Serif;
+	font-weight: 100;
+}
+
+.topnav {
+  background-color: #000;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  padding: 0px 15px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav_left {
+	width: 50%;
+	height: 100%;
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+.topnav_left a {
+  float: left;
+  height: 100%;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 23px;
+  transition-duration:0.1s;
+}
+
+/* Change the color of links on hover */
+.topnav_left a:hover {
+  text-decoration: none;
+  color: #eedf91;
+  transition-duration:0.1s;
+}
+
+/* Add a color to the active/current link */
+.topnav_left a.active {
+  color: white;
+  transition-duration:0.1s;
+}
+
+/* Style the links inside the navigation bar */
+.topnav_right {
+	width: 48%;
+}
+
+.topnav_right a {
+  float: right;
+  height: 100%;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 23px;
+  transition-duration:0.1s;
+}
+
+/* Change the color of links on hover */
+.topnav_right a:hover {
+  text-decoration: none;
+  color: #eedf91;
+  transition-duration:0.1s;
+}
+
+/* Add a color to the active/current link */
+.topnav_right a.active {
+  color: white;
+  transition-duration:0.1s;
+}
+/* -- HERO BANNER STARTS HERE -- */
+.hero
+{
+   height: 80vh;
+   background-image:url("hero/HeroBanner.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+   padding: 5%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 30px;
+}
+
+.hero_text
+{
+   line-height: 0.7;
+   font-family: shagexotica, serif;
+   font-size: 50px;
+   color: #FFF;
+}
+
+.down {
+	border-radius: 60px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	border-style: none!important;
+	color: rgba(255, 255, 255, 0.5);
+	transition-duration: 0.1s;
+}
+.down:hover {
+	border-radius: 60px;
+	background-color: rgba(128, 128, 128, 0.5);
+	padding: 10px;
+	border-style: none!important;
+	color: rgba(255, 255, 255, 1);
+	transition-duration: 0.1s;
+}
+.down:active {
+	border-radius: 60px;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 10px;
+	border-style: none!important;
+	color: rgba(255, 255, 255, 0.75);
+	transition-duration: 0.1s;
+}
+
+/* -- HERO BANNER ENDS HERE -- */
+
+/* -- BUTTON STUFF -- */
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin: 4px 2px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  font-family: shaglounge, Arial, Sans-Serif;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #af7230; 
+}
+
+.button:hover {
+  background-color: #eedf91;
+}
+
+.button_navbar {
+  border: none;
+  padding: 4px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  margin: 2px 2px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  font-family: shaglounge, Arial, Sans-Serif;
+  border-radius: 4px;
+  float: right;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  transition-duration:0.1s;
+}
+
+.button_navbar {
+  background-color: #af7230; 
+}
+
+.button_navbar:hover {
+  background-color: #eedf91;
+}
+
+/* -- INFO 1 STARTS HERE -- */
+.info1
+{
+	background-image: url("backgrounds/info1_BG.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 3.5% 50% 3.5% 10%;
+	/* padding: 3.5% 50% 3.5% 10%; */
+	/* padding: 3.5% 10%; */
+	color: #fff;
+}
+.info1 h1
+{
+	margin: 0px 0px 15px 0px;
+	font-family:shagexotica, serif;
+	color: #f4ebc4;
+	font-size:50px;
+	font-weight:100;
+	line-height:60px;
+}
+/* -- INFO 1 ENDS HERE -- */
+
+/* -- INFO 2 STARTS HERE -- */
+.info2
+{
+	background-image: url("backgrounds/info2_BG.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 3.5% 10% 3.5% 10%;
+	/* padding: 3.5% 50% 3.5% 10%; */
+	/* padding: 3.5% 10%; */
+	color: #fff;
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+.info2_text {
+	width: 50%;
+	text-align: right;
+	display:inline-block;
+}
+
+.info2_slideshow {
+	width: 50%;
+	align-items: center;
+	align-content: center;
+	display:inline-block;
+}
+
+/* -- BUTTON STUFF -- */
+.zonedot {
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  font-family: shaglounge;
+  border-radius: 100%
+}
+
+.zonedot {
+  background-color: #9f6826; 
+}
+
+.zonedot:hover {
+  background-color: #402408;
+}
+
+.info2_text h1
+{
+	margin: 0px 0px 15px 0px;
+	font-family:shagexotica, serif;
+	color: #f4ebc4;
+	font-size:50px;
+	font-weight:100;
+	line-height:60px;
+}
+
+/* -- SCREENSHOTS STARTS HERE -- */
+.screenshots
+{
+	background-image: url("backgrounds/Screenshots_BG.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 3.5% 10%;
+	color: #fff;
+}
+.screenshots h1
+{
+	margin: 0px 0px 15px 0px;
+	font-family:shagexotica, serif;
+	color: #f4ebc4;
+	font-size:50px;
+	font-weight:100;
+	line-height:60px;
+	text-align: center;
+}
+
+.scr_table {
+	padding: 3px;
+}
+
+.screenshots_content
+{
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.screenshots_content table
+{
+	align: center;
+	table-layout: fixed;
+    width: 100%;
+}
+/* -- SCREENSHOTS ENDS HERE -- */
+
+/* -- DISCORD INFO STARTS HERE -- */
+.infoDisc
+{
+	background-image: url("backgrounds/discord_BG.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	padding: 3.5% 10%;
+	color: #fff;
+}
+.infoDisc h1
+{
+	margin: 0px 0px 15px 0px;
+	font-family:shagexotica, serif;
+	color: #f4ebc4;
+	font-size:50px;
+	font-weight:100;
+	line-height:60px;
+}
+/* -- DISCORD INFO ENDS HERE -- */
+
+/* -- CREDITS STUFF -- */
+.credits_main
+{
+   height: 80vh;
+   background-image:url("backgrounds/credits_BG.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+   padding: 5%;
+   display: flex;
+   color: white;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+   align-items: center;
+}
+
+.credits_div
+{
+   background: black;
+   margin-left:auto;
+   margin-right:auto;
+   text-align: left;
+   padding: 3.5% 10% 3.5% 10%;
+   color: #fff
+}
+
+.credits_div h1
+{
+	margin: 0px 0px 15px 0px;
+	font-family:shagexotica, serif;
+	color: #f4ebc4;
+	font-size:50px;
+	font-weight:100;
+	line-height:60px;
+}
+
+/* -- FOOTER -- */
+.footer
+{
+   background: black;
+   margin-left:auto;
+   margin-right:auto;
+   text-align: left;
+   padding: 2% 10% 2% 10%;
+   color: #fff;
+   font-size: 12px;
+}
